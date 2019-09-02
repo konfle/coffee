@@ -1,10 +1,11 @@
 <!doctype html>
+{% load static %}
 <html>
 <head>
 <meta charset="utf-8"/>
 <title>All About Coffee</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 <header>
@@ -27,7 +28,7 @@ We're a little depressed. Coffee solves all these problems in one delightful lit
 - Jerry Seinfeld
 </aside>
 <section>
-<img class="photo-left"src="images/coffee-cup.png" alt="a cup of coffe" width="128" height="128"/>
+<img class="photo-left" src="{%static "images/coffee-cup.png" %}" alt="a cup of coffe" width="128" height="128"/>
 <p>Coffee preparation is the process of turning coffee beans into a beverage. 
 While the particular steps vary with the type of coffee and with the raw materials, 
 the process includes four basic steps; raw coffee beans must be<a href="roasting.html"> roasted</a>, the roasted 
