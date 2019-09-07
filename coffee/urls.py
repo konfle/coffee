@@ -22,9 +22,12 @@ from coffeeapp.views import index
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from coffeeapp.views import brewing
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('coffeeapp.urls')),
+    path('brewing.html/',include('coffeeapp.urls'))
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
