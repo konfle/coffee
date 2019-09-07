@@ -1,39 +1,40 @@
 <!doctype html>
+{% load static %}
 <html>
 <head>
 <meta charset="utf-8"/>
 <title>Coffee Roasting</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css"/>
+ <link rel="stylesheet" href="{% static 'coffeeapp/css/style.css' %}">
 </head>
 <body>
 <header>
 <h1>All About Coffee</h1>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </header>
 <h1>Coffee Roasting</h1>
 <aside>
- <figure><img src="images/coffee-berries.jpg" width="120" height="120"/>
+ <figure><img src="{% static 'coffeeapp/images/coffee-berries.jpg' %}" width="120" height="120"/>
  <figcaption>unpicked coffee berries</figcaption>
  </figure>
- <figure><img src="images/fresh-beans.jpg" width="120" height="120"/>
+ <figure><img src="{% static 'coffeeapp/images/fresh-beans.jpg' %}" width="120" height="120"/>
  <figcaption>fresh coffee beans</figcaption>
  </figure>
- <figure><img src="images/roasted-beans.jpg" width="120" height="120"/>
+ <figure><img src="{% static 'coffeeapp/images/roasted-beans.jpg' %}" width="120" height="120"/>
  <figcaption>roasted coffee beans</figcaption>
  </figure>
 </aside>
 <section>
- <figure class="photo-right"><img src="images/commercial-roaster.jpg" width="300" height="400"/>
+ <figure class="photo-right"><img src="{% static 'coffeeapp/images/commercial-roaster.jpg'%}" width="300" height="400"/>
  <figcaption>commercial coffee roaster</figcaption>
  </figure>
 
@@ -57,12 +58,12 @@ themselves of the freshest possible roast.</p>
 <footer>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </footer>

@@ -8,7 +8,7 @@ h1,h2,h3 {
 color:brown;
 }
 ul {
-list-style-image:url("/static/images/tiny-coffee-cup.gif");
+list-style-image:url("/static/coffeeapp/images/tiny-coffee-cup.gif");
 }
 a:link,a:visited {
 text-decoration:none;
@@ -57,7 +57,7 @@ float:right;
 margin-left:20px;
 }
 header{
-background-image:url("coffee-beans.jpg");
+background-image:url("/static/coffeeapp/images/coffee-beans.jpg");
 height:100px;
 margin-bottom:70px;
 }

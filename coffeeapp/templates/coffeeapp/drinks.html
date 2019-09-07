@@ -1,10 +1,11 @@
 <!doctype html>
+{% load static%}
 <html>
 <head>
 <meta charset="utf-8">
 <title>Coffee Drinks</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="{% static 'coffeeapp/css/style.css' %}">
 </head>
 
 <body>
@@ -12,21 +13,21 @@
 <h1>All About Coffee</h1>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </header>
 
 <h1>Coffee Drinks</h1>
-<video width="640" height="360" controls poster="media/latte-poster.JPG">
-<source src="media/latte-pour.mp4" type="video/mp4"/>
-<source src="media/latte-pour.webmhd.webm" type="video/webm"/>
-<source src="media/latte-pour.oggtheora.ogv" type="video/ogg"/>
+<video width="640" height="360" controls poster="{%static 'coffeeapp/media/latte-poster.JPG'%}">
+<source src="{% static 'coffeeapp/media/latte-pour.mp4'%}" type="video/mp4"/>
+<source src="{% static 'coffeeapp/media/latte-pour.webmhd.webm'%}" type="video/webm"/>
+<source src="{% static 'coffeeapp/media/latte-pour.oggtheora.ogv'%}" type="video/ogg"/>
 Your browser des not support video playback
 </video>
 <table>
@@ -84,12 +85,12 @@ Your browser des not support video playback
 <footer>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </footer>

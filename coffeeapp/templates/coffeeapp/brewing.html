@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <title>Coffee Brewing</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{% static 'coffeeapp/css/style.css' %}">
 </head>
 
 <body>
@@ -13,12 +13,12 @@
 <h1>All About Coffee</h1>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </header>
@@ -154,12 +154,12 @@ coffee.</p>
 <footer>
 <nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="roasting.html">Roasting</a></li>
-<li><a href="grinding.html">Grinding</a></li>
-<li><a href="brewing.html">Brewing</a></li>
-<li><a href="drinks.html">Drinks</a></li>
-<li><a href="survey.html">Coffee Survey</a></li>
+<li><a href="{%url 'coffeebeans:index'%}">Home</a></li>
+<li><a href="{%url 'coffeebeans:roasting'%}">Roasting</a></li>
+<li><a href="{%url 'coffeebeans:grinding'%}">Grinding</a></li>
+<li><a href="{%url 'coffeebeans:brewing'%}">Brewing</a></li>
+<li><a href="{%url 'coffeebeans:drinks'%}">Drinks</a></li>
+<li><a href="{%url 'coffeebeans:survey'%}">Coffee Survey</a></li>
 </ul>
 </nav>
 </footer>

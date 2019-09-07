@@ -8,3 +8,15 @@ def index(request):
 
 def brewing(request):
     return render(request, 'coffeeapp/brewing.html', {})
+
+def roasting(request):
+    return render(request, 'coffeeapp/roasting.html', {})
+
+def grinding(request):
+    return render(request, 'coffeeapp/grinding.html', {})
+
+def drinks(request):
+    return render(request, 'coffeeapp/drinks.html', {})
+
+def survey(request):
+    return render(request, 'coffeeapp/survey.html', {})
